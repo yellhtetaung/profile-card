@@ -29,7 +29,7 @@ body {
   box-shadow: 0.2rem 0.5rem 2rem 0.5rem var(--primary-pink);
   border-radius: 4rem 0.5rem 4rem 0.5rem;
 
-  padding: 2.3rem;
+  padding: 2rem;
 }
 
 .header {
@@ -51,6 +51,29 @@ body {
   margin: 0.5rem 0;
 }
 
+.content {
+  font-size: 1rem;
+  color: #eee;
+  text-align: center;
+  margin: 1.2rem 0;
+}
+
+.content span:nth-child(1) {
+  color: lightskyblue;
+}
+
+.content span:nth-child(2) {
+  color: cyan;
+}
+
+.content span:nth-child(3) {
+  color: greenyellow;
+}
+
+.content span:nth-child(4) {
+  color: lightcyan;
+}
+
 .contact {
   color: #9e9e9e;
   margin: 1rem;
@@ -68,13 +91,20 @@ body {
   transition: all 0.3s;
 }
 
+.fab,
+.fas {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
 .contact-item a:hover {
   color: var(--primary-pink);
   letter-spacing: 0.2em;
+  text-shadow: 0.3rem 0.5rem 1rem cyan;
 }
 
 .profile-link {
-  color: #e7e7e7;
+  color: lightcyan;
   text-decoration: none;
   font-size: 1.2rem;
   display: block;
@@ -83,4 +113,13 @@ body {
   margin: 1.5rem auto;
 
   transition: all 0.5s;
+}
+
+.profile-link:hover {
+  color: var(--primary-pink);
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.3rem 0.5rem 1rem cyan;
+
+  transform: scale(1.2);
 }
